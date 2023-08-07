@@ -1,0 +1,7 @@
+n=-50:50;
+impulse = n==0;
+plot(n,impulse);
+unitstep = n>=0;
+plot(n,unitstep);
+ramp=(n>=0).*n;
+plot(n,ramp);

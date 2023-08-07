@@ -1,0 +1,13 @@
+n=-50:50;
+subplot(3,1,1);
+impulse = n==0;
+stem(n,impulse);
+title('Impulse');
+subplot(3,1,2);
+unitstep = n>=0;
+stem(n,unitstep);
+title('Unit Step');
+subplot(3,1,3);
+ramp=(n>=0).*n;
+stem(n,ramp);
+title('Ramp');
